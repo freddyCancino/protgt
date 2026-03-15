@@ -3,341 +3,369 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PROtgt Seguros S.A. de C.V. – Inicio | Seguros para Transporte Público y Comercial</title>
-  <meta name="description" content="Seguros especializados para taxis, tráilers, urvans, grúas y transporte turístico en México. Cotiza hoy.">
+  <title>PROtgt Seguros S.A. de C.V. – Seguros para Transporte Público y Comercial</title>
+  <meta name="description" content="PROtgt Seguros – Seguros especializados para taxis, tráilers, urvans, grúas y transporte turístico en México.">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- ══ HEADER (compartido) ══ -->
-  <header id="site-header">
-    <div class="header-inner">
-      <a class="logo" href="index.html">
-        <div class="logo-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-        </div>
-         <span>PROtgt Seguros S.A. de C.V.</span>
-      </a>
-      <nav class="main-nav">
-        <a href="index.html">Inicio</a>
-        <a href="quienes.html">Nosotros</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="vehiculos.html">Vehículos</a>
-        <a href="siniestros.html">Siniestros</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="cotizacion.html" class="nav-cta">Solicita tu cotización</a>
-      </nav>
-      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <nav id="mobile-menu">
-      <a href="index.html">Inicio</a>
+<!-- ══ HEADER ══ -->
+<header id="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+      </div>
+      <div><span>PROtgt</span> Seguros<small>S.A. de C.V.</small></div>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Inicio</a>
       <a href="quienes.html">Nosotros</a>
       <a href="servicios.html">Servicios</a>
-      <a href="vehiculos.html">Vehículos Asegurados</a>
+      <a href="vehiculos.html">Vehículos</a>
       <a href="siniestros.html">Siniestros</a>
       <a href="contacto.html">Contacto</a>
-      <a href="cotizacion.html" class="nav-cta-mobile">Solicita tu cotización</a>
+      <a href="cotizacion.html" class="nav-cta">Solicita tu cotización</a>
     </nav>
-  </header>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav id="mobile-menu">
+    <a href="index.html">Inicio</a>
+    <a href="quienes.html">Nosotros</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="vehiculos.html">Vehículos Asegurados</a>
+    <a href="siniestros.html">Siniestros</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="cotizacion.html" class="nav-cta-mobile">Solicita tu cotización</a>
+  </nav>
+</header>
 
-  <main class="page-body">
+<main class="page-body">
 
-    <!-- ── HERO ── -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <div>
-            <div class="hero-badge">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
-              </svg>
-              Especialistas en Transporte
-            </div>
-            <h1>Seguros especializados para <span>transporte público</span> y comercial</h1>
-            <p>Más de una década protegiendo flotas, operadores y empresas de transporte en México. Cobertura integral, atención personalizada y respuesta inmediata ante cualquier siniestro.</p>
-            <div class="hero-btns">
-              <a class="btn btn-primary" href="cotizacion.html">
-                📋 Solicitar cotización
-              </a>
-              <a class="btn btn-outline" href="https://wa.me/521234567890?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20seguros%20de%20transporte." target="_blank" rel="noopener">
-                💬 Hablar por WhatsApp
-              </a>
-            </div>
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-accent-bar"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div>
+          <div class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+            </svg>
+            PROtgt Seguros · Chiapas y México
           </div>
-          <div class="hero-visual reveal">
-            <div class="hero-card">
-              <div style="color:rgba(255,255,255,.45);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;margin-bottom:20px">Cobertura en todo México</div>
-              <div class="hero-card-grid">
-                <div class="hero-stat"><div class="num">+500</div><div class="lbl">Clientes activos</div></div>
-                <div class="hero-stat"><div class="num">+10</div><div class="lbl">Años de experiencia</div></div>
-                <div class="hero-stat"><div class="num">24/7</div><div class="lbl">Atención disponible</div></div>
-                <div class="hero-stat"><div class="num">98%</div><div class="lbl">Satisfacción</div></div>
-              </div>
-              <div class="hero-trust">
-                <div class="trust-avatars">
-                  <span>JM</span><span>AP</span><span>CR</span><span>LG</span>
-                </div>
-                <div class="trust-text"><strong>+500 transportistas</strong> ya confían en nosotros</div>
-              </div>
-            </div>
+          <h1>Seguros especializados para <span>transporte público</span> y comercial</h1>
+          <p>Más de una década protegiendo flotas, operadores y empresas de transporte en México. Cobertura integral, atención personalizada y respuesta inmediata ante cualquier siniestro.</p>
+          <div class="hero-btns">
+            <a class="btn btn-primary" href="cotizacion.html">📋 Solicitar cotización</a>
+            <a class="btn btn-outline" href="https://wa.me/529614535466?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20seguros%20de%20transporte." target="_blank" rel="noopener">💬 Hablar por WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- HERO VISUAL -->
+        <div class="hero-visual reveal">
+          <img class="hero-img-main" src="images/trailers.jpg" alt="Flotilla de tráilers asegurados PROtgt Seguros">
+          <div class="hero-img-row">
+            <img src="images/taxi.jpg" alt="Taxi asegurado PROtgt Seguros">
+            <img src="images/urvan.jpg" alt="Urvan colectivo asegurada PROtgt Seguros">
+          </div>
+          <div class="hero-stats-bar">
+            <div class="hs-item"><div class="n">+500</div><div class="l">Clientes</div></div>
+            <div class="hs-item"><div class="n">+10</div><div class="l">Años</div></div>
+            <div class="hs-item"><div class="n">24/7</div><div class="l">Atención</div></div>
+            <div class="hs-item"><div class="n">98%</div><div class="l">Satisfacción</div></div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ── VEHÍCULOS ── -->
-    <section class="section">
-      <div class="container">
-        <div class="title-center">
-          <div class="section-tag">Vehículos asegurados</div>
-          <h2 class="section-title">Cobertura para todo tipo de transporte</h2>
-          <p class="section-sub">Planes específicos para cada categoría. Haz clic para conocer las coberturas disponibles.</p>
-        </div>
-        <div class="vehicle-grid">
-          <a class="v-card reveal" href="vehiculos.html">
-            <div class="v-icon">🚕</div>
-            <h3>Taxis</h3><p>Servicio público individual</p>
-          </a>
-          <a class="v-card reveal" href="vehiculos.html">
-            <div class="v-icon">🚛</div>
-            <h3>Tráilers</h3><p>Carga pesada y comercial</p>
-          </a>
-          <a class="v-card reveal" href="vehiculos.html">
-            <div class="v-icon">🚗</div>
-            <h3>Automóviles</h3><p>Uso particular y privado</p>
-          </a>
-          <a class="v-card reveal" href="vehiculos.html">
-            <div class="v-icon">🏗️</div>
-            <h3>Grúas</h3><p>Vehículos de arrastre</p>
-          </a>
-          <a class="v-card reveal" href="vehiculos.html">
-            <div class="v-icon">🚌</div>
-            <h3>Turismo</h3><p>Transporte de pasajeros</p>
-          </a>
-          <a class="v-card reveal" href="vehiculos.html">
-            <div class="v-icon">🚐</div>
-            <h3>Urvans</h3><p>Vans y transporte colectivo</p>
-          </a>
-        </div>
+  <!-- ── VEHÍCULOS ── -->
+  <section class="section">
+    <div class="container">
+      <div class="title-center">
+        <div class="section-tag">🚗 Vehículos asegurados</div>
+        <h2 class="section-title">Cobertura para todo tipo de transporte</h2>
+        <p class="section-sub">Planes específicos para cada categoría. Haz clic para conocer las coberturas disponibles.</p>
       </div>
-    </section>
-
-    <!-- ── BENEFICIOS ── -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="title-center">
-          <div class="section-tag">Nuestros beneficios</div>
-          <h2 class="section-title">¿Por qué elegirnos?</h2>
-          <p class="section-sub">Ventajas únicas que nos distinguen del resto del mercado asegurador.</p>
-        </div>
-        <div class="benefits-grid">
-          <div class="b-card reveal"><div class="b-icon">🕐</div><h3>Atención 24/7</h3><p>Equipo disponible las 24 horas del día, los 7 días de la semana para atenderte en cualquier emergencia.</p></div>
-          <div class="b-card reveal"><div class="b-icon">⚡</div><h3>Respuesta rápida</h3><p>Garantizamos tiempos de respuesta ágiles ante cualquier siniestro para que retomes tu actividad pronto.</p></div>
-          <div class="b-card reveal"><div class="b-icon">🗺️</div><h3>Cobertura nacional</h3><p>Operamos en todos los estados de la República con una amplia red de ajustadores y talleres certificados.</p></div>
-          <div class="b-card reveal"><div class="b-icon">📋</div><h3>Planes personalizados</h3><p>Diseñamos planes adaptados a las necesidades específicas de tu flota, sin cobros innecesarios.</p></div>
-          <div class="b-card reveal"><div class="b-icon">💰</div><h3>Precios competitivos</h3><p>Las mejores tarifas del mercado sin sacrificar la calidad de la cobertura ni el servicio al cliente.</p></div>
-          <div class="b-card reveal"><div class="b-icon">👨‍💼</div><h3>Asesores especializados</h3><p>Especialistas en seguros de transporte que conocen a fondo las necesidades del sector.</p></div>
-        </div>
+      <div class="vehicle-grid">
+        <a class="v-card" href="vehiculos.html">
+          <img class="v-card-img" src="images/taxi.jpg" alt="Taxi">
+          <div class="v-card-body"><h3>Taxis</h3><p>Servicio público individual</p><span class="v-card-tag">Responsabilidad Civil</span></div>
+        </a>
+        <a class="v-card" href="vehiculos.html">
+          <img class="v-card-img" src="images/trailers.jpg" alt="Tráilers">
+          <div class="v-card-body"><h3>Tráilers</h3><p>Carga pesada y comercial</p><span class="v-card-tag">Cobertura Amplia</span></div>
+        </a>
+        <a class="v-card" href="vehiculos.html">
+          <img class="v-card-img" src="images/autos.jpg" alt="Automóviles">
+          <div class="v-card-body"><h3>Automóviles</h3><p>Uso particular y privado</p><span class="v-card-tag">Planes flexibles</span></div>
+        </a>
+        <a class="v-card" href="vehiculos.html">
+          <img class="v-card-img" src="images/trailers2.jpg" alt="Grúas">
+          <div class="v-card-body"><h3>Grúas</h3><p>Vehículos de arrastre</p><span class="v-card-tag">RC Especial</span></div>
+        </a>
+        <a class="v-card" href="vehiculos.html">
+          <img class="v-card-img" src="images/bus.jpg" alt="Transporte turístico">
+          <div class="v-card-body"><h3>Turismo</h3><p>Transporte de pasajeros</p><span class="v-card-tag">Pasajeros + Carga</span></div>
+        </a>
+        <a class="v-card" href="vehiculos.html">
+          <img class="v-card-img" src="images/urvan.jpg" alt="Urvan colectivo">
+          <div class="v-card-body"><h3>Urvans</h3><p>Vans y transporte colectivo</p><span class="v-card-tag">Colectivo</span></div>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ── POR QUÉ ── -->
-    <section class="section">
-      <div class="container">
-        <div class="why-inner">
-          <div>
-            <div class="section-tag">Nuestra propuesta</div>
-            <h2 class="section-title">Expertos que entienden el transporte</h2>
-            <p class="section-sub">No somos una aseguradora genérica. Nos especializamos exclusivamente en el sector transporte.</p>
-            <div class="why-list">
-              <div class="why-item reveal">
-                <div class="why-num">01</div>
-                <div class="why-text"><h4>Experiencia en transporte</h4><p>Más de una década asegurando flotas, taxis, tráilers y todo tipo de vehículos de servicio público y comercial en México.</p></div>
-              </div>
-              <div class="why-item reveal">
-                <div class="why-num">02</div>
-                <div class="why-text"><h4>Atención personalizada</h4><p>Cada cliente cuenta con un asesor dedicado que conoce su flota y sus necesidades de cobertura específicas.</p></div>
-              </div>
-              <div class="why-item reveal">
-                <div class="why-num">03</div>
-                <div class="why-text"><h4>Coberturas flexibles</h4><p>Desde responsabilidad civil básica hasta cobertura amplia con asistencia legal y protección de carga.</p></div>
-              </div>
-              <div class="why-item reveal">
-                <div class="why-num">04</div>
-                <div class="why-text"><h4>Respaldo y confianza</h4><p>Respaldados por aseguradoras de primer nivel, garantizando solvencia y cumplimiento en cada siniestro.</p></div>
-              </div>
+  <!-- ── BENEFICIOS ── -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="title-center">
+        <div class="section-tag">⭐ Nuestros beneficios</div>
+        <h2 class="section-title">¿Por qué elegirnos?</h2>
+        <p class="section-sub">Ventajas únicas que distinguen a PROtgt Seguros del resto del mercado asegurador.</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="b-card reveal"><div class="b-icon">🕐</div><h3>Atención 24/7</h3><p>Equipo disponible las 24 horas del día, los 7 días de la semana para cualquier emergencia.</p></div>
+        <div class="b-card reveal"><div class="b-icon">⚡</div><h3>Respuesta rápida</h3><p>Tiempos de respuesta ágiles ante cualquier siniestro para que retomes tu actividad pronto.</p></div>
+        <div class="b-card reveal"><div class="b-icon">🗺️</div><h3>Cobertura nacional</h3><p>Operamos en todos los estados con una amplia red de ajustadores y talleres certificados.</p></div>
+        <div class="b-card reveal"><div class="b-icon">📋</div><h3>Planes personalizados</h3><p>Diseñamos planes adaptados a las necesidades específicas de tu flota, sin cobros innecesarios.</p></div>
+        <div class="b-card reveal"><div class="b-icon">💰</div><h3>Precios competitivos</h3><p>Las mejores tarifas del mercado sin sacrificar la calidad de la cobertura ni el servicio.</p></div>
+        <div class="b-card reveal"><div class="b-icon">👨‍💼</div><h3>Asesores especializados</h3><p>Especialistas en seguros de transporte que conocen a fondo las necesidades del sector.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── POR QUÉ ELEGIRNOS ── -->
+  <section class="section">
+    <div class="container">
+      <div class="why-inner">
+        <div>
+          <div class="section-tag">💼 Nuestra propuesta</div>
+          <h2 class="section-title">Expertos que entienden el transporte</h2>
+          <p class="section-sub">PROtgt Seguros no es una aseguradora genérica. Nos especializamos exclusivamente en el sector transporte.</p>
+          <div class="why-list">
+            <div class="why-item reveal">
+              <div class="why-num">01</div>
+              <div class="why-text"><h4>Experiencia en transporte</h4><p>Más de una década asegurando flotas, taxis, tráilers y todo tipo de vehículos de servicio público y comercial en México.</p></div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-num">02</div>
+              <div class="why-text"><h4>Atención personalizada</h4><p>Cada cliente cuenta con un asesor dedicado que conoce su flota y sus necesidades de cobertura específicas.</p></div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-num">03</div>
+              <div class="why-text"><h4>Coberturas flexibles</h4><p>Desde responsabilidad civil básica hasta cobertura amplia con asistencia legal y protección de carga.</p></div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-num">04</div>
+              <div class="why-text"><h4>Respaldo y confianza</h4><p>Respaldados por aseguradoras de primer nivel, garantizando solvencia y cumplimiento en cada siniestro.</p></div>
             </div>
           </div>
-          <div class="why-visual reveal">
-            <h3>Resultados que hablan por sí solos</h3>
+        </div>
+        <div class="why-visual reveal">
+          <img class="why-visual-img" src="images/seguros-manos.jpg" alt="PROtgt Seguros protección integral de transporte">
+          <div class="why-visual-overlay">
             <div class="stat-row">
               <div class="stat-box"><div class="n">+500</div><div class="l">Clientes activos</div></div>
               <div class="stat-box"><div class="n">+10</div><div class="l">Años en el sector</div></div>
-            </div>
-            <div class="stat-row" style="margin-top:16px">
               <div class="stat-box"><div class="n">98%</div><div class="l">Satisfacción</div></div>
-              <div class="stat-box"><div class="n">24h</div><div class="l">Respuesta promedio</div></div>
-            </div>
-            <div class="tray-quote">
-              "Nuestra misión es que cada operador de transporte tenga la tranquilidad de salir a trabajar sabiendo que está protegido."
+              <div class="stat-box"><div class="n">24h</div><div class="l">Respuesta</div></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ── TESTIMONIOS ── -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="title-center">
-          <div class="section-tag">Testimonios</div>
-          <h2 class="section-title">Lo que dicen nuestros clientes</h2>
-        </div>
-        <div class="testi-grid">
-          <div class="testi-card reveal">
-            <div class="stars">★★★★★</div>
-            <p>"Llevo 5 años con PROtgt Seguros S.A. de C.V. asegurando mi flotilla de taxis. La atención es excelente y cuando tuvimos un siniestro respondieron en menos de 24 horas. Totalmente recomendados."</p>
-            <div class="testi-author"><div class="avatar">JM</div><div><strong>Jorge Méndez</strong><span>Propietario de flotilla, CDMX</span></div></div>
-          </div>
-          <div class="testi-card reveal">
-            <div class="stars">★★★★★</div>
-            <p>"Aseguré mis dos tráilers y el proceso fue muy sencillo. El asesor me explicó todas las coberturas con paciencia y el precio fue mucho mejor de lo que esperaba."</p>
-            <div class="testi-author"><div class="avatar">AP</div><div><strong>Arturo Pedroza</strong><span>Transportista, Monterrey</span></div></div>
-          </div>
-          <div class="testi-card reveal">
-            <div class="stars">★★★★★</div>
-            <p>"Trabajo con transporte turístico y necesitaba cobertura especializada. PROtgt Seguros S.A. de C.V. me ofreció exactamente lo que buscaba a un precio justo. El servicio posventa es inmejorable."</p>
-            <div class="testi-author"><div class="avatar">CL</div><div><strong>Carmen López</strong><span>Operadora turística, Cancún</span></div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── FAQ ── -->
-    <section class="section">
-      <div class="container">
-        <div class="title-center">
-          <div class="section-tag">Preguntas frecuentes</div>
-          <h2 class="section-title">¿Tienes dudas? Aquí las resolvemos</h2>
-        </div>
-        <div class="faq-list">
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">¿Qué tipos de vehículos pueden asegurarse? <span class="faq-arrow">▾</span></div>
-            <div class="faq-a"><div class="faq-a-inner">Aseguramos taxis, tráilers, automóviles particulares, grúas, vehículos de transporte turístico y urvans. También manejamos flotillas completas con planes corporativos.</div></div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">¿Cómo puedo obtener una cotización? <span class="faq-arrow">▾</span></div>
-            <div class="faq-a"><div class="faq-a-inner">Puedes solicitar tu cotización llenando el formulario en la sección <a href="cotizacion.html" style="color:var(--blue)">Cotización</a>, llamándonos directamente o enviando un mensaje por WhatsApp. Respondemos en menos de 2 horas hábiles.</div></div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">¿Qué incluye la cobertura amplia? <span class="faq-arrow">▾</span></div>
-            <div class="faq-a"><div class="faq-a-inner">La cobertura amplia incluye daños materiales al vehículo, responsabilidad civil, robo total, asistencia vial 24/7, gastos médicos y, dependiendo del plan, protección legal y cobertura de carga.</div></div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">¿Cómo reporto un siniestro? <span class="faq-arrow">▾</span></div>
-            <div class="faq-a"><div class="faq-a-inner">Llama a nuestra línea de emergencias 24/7, contáctanos por WhatsApp o visita nuestra sección de <a href="siniestros.html" style="color:var(--blue)">Siniestros</a>. Un ajustador se pondrá en contacto contigo de inmediato.</div></div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">¿Ofrecen planes para flotillas? <span class="faq-arrow">▾</span></div>
-            <div class="faq-a"><div class="faq-a-inner">Sí, contamos con planes especiales para flotillas desde 2 vehículos con descuentos por volumen y gestión centralizada. <a href="cotizacion.html" style="color:var(--blue)">Contáctanos</a> para una propuesta personalizada.</div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── CTA FINAL ── -->
-    <section class="section" style="padding:40px 0 80px">
-      <div class="container">
-        <div class="cta-banner reveal">
-          <h2>¿Listo para proteger tu vehículo o flota?</h2>
-          <p>Obtén tu cotización en minutos. Sin compromisos, sin letra pequeña. Solo cobertura real para transportistas reales.</p>
-          <div class="cta-btns">
-            <a class="btn btn-primary" href="cotizacion.html">Solicitar cotización gratuita</a>
-            <a class="btn btn-outline" href="https://wa.me/521234567890?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20seguros%20de%20transporte." target="_blank" rel="noopener">WhatsApp directo</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ══ FOOTER (compartido) ══ -->
-  <footer id="site-footer">
+  <!-- ── FRANJA NARANJA ── -->
+  <section class="section-orange">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="logo" href="index.html">
-            <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
-            <span>PROtgt Seguros S.A. de C.V.</span>
-          </a>
-          <p>Especialistas en seguros para transporte público y comercial. Más de una década protegiendo flotas y operadores en toda la República Mexicana.</p>
-          <div class="footer-social">
-            <a class="social-icon" href="#" title="Facebook">f</a>
-            <a class="social-icon" href="#" title="Instagram">ig</a>
-            <a class="social-icon" href="#" title="LinkedIn">in</a>
-            <a class="social-icon" href="https://wa.me/521234567890" target="_blank" title="WhatsApp">W</a>
+      <h2>Tu vehículo, tu trabajo. PROtgt Seguros lo protege.</h2>
+      <p>Más de 500 operadores de transporte en México confían en PROtgt Seguros para salir a trabajar con tranquilidad cada día.</p>
+      <a class="btn btn-outline" href="cotizacion.html" style="border-color:rgba(255,255,255,.6);font-size:16px;padding:14px 32px">Solicitar cotización gratuita →</a>
+    </div>
+  </section>
+
+  <!-- ── GALERÍA CLIENTES ── -->
+  <section class="section">
+    <div class="container">
+      <div class="title-center">
+        <div class="section-tag">👥 Nuestros clientes</div>
+        <h2 class="section-title">Transportistas y pasajeros, siempre protegidos</h2>
+        <p class="section-sub">Cubrimos a los operadores y a los pasajeros que confían en ellos cada día.</p>
+      </div>
+      <div class="img-trio reveal" style="margin-top:40px">
+        <img src="images/conductor.jpg" alt="Conductor transportista feliz" style="border-radius:var(--r)">
+        <img src="images/pasajeros-bus.jpg" alt="Pasajeros en autobús turístico" style="border-radius:var(--r)">
+        <img src="images/pasajera-taxi.jpg" alt="Pasajera en taxi" style="border-radius:var(--r)">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIOS ── -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="title-center">
+        <div class="section-tag">⭐ Testimonios</div>
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Llevo 5 años con PROtgt Seguros asegurando mi flotilla de taxis. La atención es excelente y cuando tuvimos un siniestro respondieron en menos de 24 horas."</p>
+          <div class="testi-author">
+            <img class="testi-photo" src="images/conductor.jpg" alt="Jorge Méndez">
+            <div><strong>Jorge Méndez</strong><span>Flotilla de taxis, Tuxtla Gutiérrez</span></div>
           </div>
         </div>
-        <div>
-          <h4>Navegación</h4>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="quienes.html">Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="vehiculos.html">Vehículos</a></li>
-            <li><a href="siniestros.html">Siniestros</a></li>
-            <li><a href="cotizacion.html">Cotización</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
+        <div class="testi-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Aseguré mis dos tráilers con PROtgt y el proceso fue muy sencillo. El asesor me explicó todas las coberturas y el precio fue mucho mejor de lo esperado."</p>
+          <div class="testi-author">
+            <div class="avatar">AP</div>
+            <div><strong>Arturo Pedroza</strong><span>Transportista de carga, Monterrey</span></div>
+          </div>
         </div>
-        <div>
-          <h4>Servicios</h4>
-          <ul>
-            <li><a href="servicios.html">Responsabilidad Civil</a></li>
-            <li><a href="servicios.html">Cobertura Amplia</a></li>
-            <li><a href="servicios.html">Seguro de Pasajeros</a></li>
-            <li><a href="servicios.html">Protección de Carga</a></li>
-            <li><a href="servicios.html">Seguro de Flotillas</a></li>
-            <li><a href="servicios.html">Asistencia Vial</a></li>
-            <li><a href="servicios.html">Asistencia Legal</a></li>
-          </ul>
+        <div class="testi-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Trabajo con transporte turístico y necesitaba cobertura especializada. PROtgt Seguros me ofreció exactamente lo que buscaba. El servicio posventa es inmejorable."</p>
+          <div class="testi-author">
+            <img class="testi-photo" src="images/pasajeros-bus2.jpg" alt="Carmen López">
+            <div><strong>Carmen López</strong><span>Operadora turística, Cancún</span></div>
+          </div>
         </div>
-        <div>
-          <h4>Contacto</h4>
-          <ul>
-            <li><a href="contacto.html">📍 Insurgentes Sur 1234, CDMX</a></li>
-            <li><a href="tel:5512345678">📞 (55) 1234-5678</a></li>
-            <li><a href="mailto:info@PROtgtSeguros@">✉️ info@PROtgtSeguros.com.mx</a></li>
-            <li><a href="#">🕐 Lun–Vie 8:00–19:00</a></li>
-            <li><a href="siniestros.html">🚨 Emergencias 24/7</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2025 PROtgt Seguros S.A. de C.V. Todos los derechos reservados.</p>
-        <p>Diseñado para el sector transporte de México</p>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <!-- ══ WHATSAPP WIDGET (compartido) ══ -->
-  <div class="wa-widget">
-    <div class="wa-bubble hidden" id="wa-bubble">
-      <button class="close-btn" onclick="_closeBubblePermanent()" aria-label="Cerrar">✕</button>
-      <div class="wa-bubble-header">¿Necesitas ayuda?</div>
-      <p>Contáctanos por WhatsApp para cotizar tu seguro de transporte.</p>
-      <a class="wa-bubble-link" href="https://wa.me/521234567890?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20seguros%20de%20transporte." target="_blank" rel="noopener">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-        Abrir WhatsApp
-      </a>
+  <!-- ── FAQ ── -->
+  <section class="section">
+    <div class="container">
+      <div class="title-center">
+        <div class="section-tag">❓ Preguntas frecuentes</div>
+        <h2 class="section-title">¿Tienes dudas? Aquí las resolvemos</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">¿Qué tipos de vehículos pueden asegurarse con PROtgt? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Aseguramos taxis, tráilers, automóviles particulares, grúas, vehículos de transporte turístico y urvans. También manejamos flotillas completas con planes corporativos.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">¿Cómo puedo obtener una cotización? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Puedes solicitar tu cotización llenando el formulario en la sección <a href="cotizacion.html" style="color:var(--accent)">Cotización</a>, llamándonos al <strong>(961) 453-54-66</strong> o enviando un mensaje por WhatsApp. Respondemos en menos de 2 horas hábiles.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">¿Qué incluye la cobertura amplia? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a"><div class="faq-a-inner">La cobertura amplia incluye daños materiales al vehículo, responsabilidad civil, robo total, asistencia vial 24/7, gastos médicos y, dependiendo del plan, protección legal y cobertura de carga.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">¿Cómo reporto un siniestro? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Llama a nuestras líneas de siniestros: <strong>999 63 66 644</strong> o <strong>999 64 22 017</strong>, disponibles las 24 horas. También puedes contactarnos por WhatsApp al instante.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">¿PROtgt ofrece planes para flotillas? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Sí, contamos con planes especiales para flotillas desde 2 vehículos con descuentos por volumen y gestión centralizada. <a href="cotizacion.html" style="color:var(--accent)">Contáctanos</a> para una propuesta personalizada.</div></div>
+        </div>
+      </div>
     </div>
-    <a class="wa-btn" href="https://wa.me/521234567890?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20seguros%20de%20transporte." target="_blank" rel="noopener" title="Contactar por WhatsApp">
-      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </section>
+
+  <!-- ── CTA FINAL ── -->
+  <section class="section" style="padding:40px 0 80px">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>¿Listo para proteger tu vehículo o flota?</h2>
+        <p>Obtén tu cotización en minutos con PROtgt Seguros. Sin compromisos, sin letra pequeña.<br>Solo cobertura real para transportistas reales.</p>
+        <div class="cta-btns">
+          <a class="btn btn-primary" href="cotizacion.html">Solicitar cotización gratuita</a>
+          <a class="btn btn-outline" href="https://wa.me/529614535466?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20seguros%20de%20transporte." target="_blank" rel="noopener">WhatsApp directo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer id="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">
+          <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
+          <div><span>PROtgt</span> Seguros<small>S.A. de C.V.</small></div>
+        </a>
+        <p>Especialistas en seguros para transporte público y comercial. Más de una década protegiendo flotas y operadores en toda la República Mexicana.</p>
+        <div class="footer-social">
+          <a class="social-icon" href="#" title="Facebook">f</a>
+          <a class="social-icon" href="#" title="Instagram">ig</a>
+          <a class="social-icon" href="#" title="LinkedIn">in</a>
+          <a class="social-icon" href="https://wa.me/529614535466" target="_blank" title="WhatsApp">W</a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="quienes.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="vehiculos.html">Vehículos</a></li>
+          <li><a href="siniestros.html">Siniestros</a></li>
+          <li><a href="cotizacion.html">Cotización</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="terminos.html" style="opacity:.6;font-size:12px">Términos y Condiciones</a></li>
+          <li><a href="manual.html" style="opacity:.6;font-size:12px">Manual</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="servicios.html">Responsabilidad Civil</a></li>
+          <li><a href="servicios.html">Cobertura Amplia</a></li>
+          <li><a href="servicios.html">Seguro de Pasajeros</a></li>
+          <li><a href="servicios.html">Protección de Carga</a></li>
+          <li><a href="servicios.html">Seguro de Flotillas</a></li>
+          <li><a href="servicios.html">Asistencia Vial</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="contacto.html">📍 9A. Sur Oriente No. 2705<br>&nbsp;&nbsp;&nbsp;&nbsp;Col. Santa María la Rivera<br>&nbsp;&nbsp;&nbsp;&nbsp;Tuxtla Gutiérrez, Chiapas</a></li>
+          <li><a href="tel:9614535466">📞 Ventas: 961 453 54 66</a></li>
+          <li><a href="tel:9996366644">🚨 Siniestros: 999 63 66 644</a></li>
+          <li><a href="tel:9996422017">🚨 Siniestros: 999 64 22 017</a></li>
+          <li><a href="#">🕐 Lun–Vie 8:00–19:00</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 PROtgt Seguros S.A. de C.V. Todos los derechos reservados.</p>
+      <p>Tuxtla Gutiérrez, Chiapas · México</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ WHATSAPP WIDGET ══ -->
+<div class="wa-widget">
+  <div class="wa-bubble hidden" id="wa-bubble">
+    <button class="close-btn" onclick="_closeBubblePermanent()" aria-label="Cerrar">✕</button>
+    <div class="wa-bubble-header">¿Necesitas ayuda?</div>
+    <p>Contáctanos por WhatsApp para cotizar tu seguro de transporte.</p>
+    <a class="wa-bubble-link" href="https://wa.me/529614535466?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20seguros%20de%20transporte." target="_blank" rel="noopener">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+      Abrir WhatsApp
     </a>
   </div>
+  <a class="wa-btn" href="https://wa.me/529614535466?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20seguros%20de%20transporte." target="_blank" rel="noopener" title="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+</div>
 
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
