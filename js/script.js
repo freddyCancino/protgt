@@ -150,7 +150,7 @@ async function handleQuoteSubmit(e) {
 async function handleContactSubmit(e) {
   e.preventDefault();
   const form = e.target;
-  const btn  = form.querySelector('button[type="submit"]');
+  const btn  = document.getElementById('btn-contacto');
   const originalText = btn ? btn.textContent : '';
 
   if (btn) { btn.textContent = 'Enviando...'; btn.disabled = true; }
