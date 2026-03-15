@@ -1,0 +1,151 @@
+<!-- ================================================================
+     ARCHIVO: vehiculos.html
+================================================================ -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehículos Asegurados – PROtgt Seguros S.A. de C.V.</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html"><div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div><span>PROtgt Seguros S.A. de C.V.</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a><a href="quienes.html">Nosotros</a><a href="servicios.html">Servicios</a><a href="vehiculos.html" class="active">Vehículos</a><a href="siniestros.html">Siniestros</a><a href="contacto.html">Contacto</a><a href="cotizacion.html" class="nav-cta">Solicita tu cotización</a>
+      </nav>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+    <nav id="mobile-menu">
+      <a href="index.html">Inicio</a><a href="quienes.html">Nosotros</a><a href="servicios.html">Servicios</a><a href="vehiculos.html">Vehículos Asegurados</a><a href="siniestros.html">Siniestros</a><a href="contacto.html">Contacto</a><a href="cotizacion.html" class="nav-cta-mobile">Solicita tu cotización</a>
+    </nav>
+  </header>
+
+  <main class="page-body">
+    <div class="page-header">
+      <h1>Vehículos Asegurados</h1>
+      <p>Cobertura especializada para cada categoría de transporte público y comercial.</p>
+      <div class="breadcrumb"><a href="index.html">Inicio</a><span>/</span><span style="opacity:1">Vehículos Asegurados</span></div>
+    </div>
+
+    <div class="container">
+      <!-- TAXIS -->
+      <div class="vh-section">
+        <div class="vh-inner reveal">
+          <div>
+            <div class="vh-icon-big">🚕</div>
+            <h2>Taxis</h2>
+            <p class="desc">El seguro para taxi es una obligación legal y una necesidad real. Cubrimos tanto el vehículo como la responsabilidad civil ante pasajeros y terceros, con planes adaptados a taxis de sitio, plataformas digitales y concesionados.</p>
+            <a class="btn btn-blue" href="cotizacion.html" style="margin-top:8px">Cotizar este vehículo</a>
+          </div>
+          <div class="vh-cols">
+            <div class="vh-box"><h4>Riesgos comunes</h4><ul><li>Accidentes en ciudad</li><li>Robo en zonas de riesgo</li><li>Lesiones a pasajeros</li><li>Daños a terceros</li></ul></div>
+            <div class="vh-box"><h4>Coberturas sugeridas</h4><ul><li>Responsabilidad civil ampliada</li><li>Seguro de pasajeros</li><li>Daños materiales</li><li>Asistencia legal vial</li></ul></div>
+          </div>
+        </div>
+      </div>
+      <!-- TRÁILERS -->
+      <div class="vh-section">
+        <div class="vh-inner reveal">
+          <div>
+            <div class="vh-icon-big">🚛</div>
+            <h2>Tráilers y Camiones de Carga</h2>
+            <p class="desc">Los vehículos de carga representan una inversión elevada y operan en rutas de alto riesgo. Nuestros planes cubren el equipo, la mercancía, la responsabilidad ante terceros y los incidentes en carretera federal.</p>
+            <a class="btn btn-blue" href="cotizacion.html" style="margin-top:8px">Cotizar este vehículo</a>
+          </div>
+          <div class="vh-cols">
+            <div class="vh-box"><h4>Riesgos comunes</h4><ul><li>Accidentes en carretera</li><li>Robo de carga y vehículo</li><li>Volcaduras y siniestros</li><li>Daños a infraestructura</li></ul></div>
+            <div class="vh-box"><h4>Coberturas sugeridas</h4><ul><li>Cobertura amplia</li><li>Protección de carga</li><li>RC ampliada</li><li>Asistencia vial federal</li></ul></div>
+          </div>
+        </div>
+      </div>
+      <!-- AUTOMÓVILES -->
+      <div class="vh-section">
+        <div class="vh-inner reveal">
+          <div>
+            <div class="vh-icon-big">🚗</div>
+            <h2>Automóviles</h2>
+            <p class="desc">Para vehículos de uso particular o servicio privado, ofrecemos planes desde la cobertura básica de responsabilidad civil hasta la cobertura amplia más completa, con la mejor relación precio-beneficio.</p>
+            <a class="btn btn-blue" href="cotizacion.html" style="margin-top:8px">Cotizar este vehículo</a>
+          </div>
+          <div class="vh-cols">
+            <div class="vh-box"><h4>Riesgos comunes</h4><ul><li>Colisiones urbanas</li><li>Robo de vehículo</li><li>Fenómenos naturales</li><li>Actos vandálicos</li></ul></div>
+            <div class="vh-box"><h4>Coberturas sugeridas</h4><ul><li>Daños materiales</li><li>Robo total</li><li>RC ilimitada</li><li>Gastos médicos</li></ul></div>
+          </div>
+        </div>
+      </div>
+      <!-- GRÚAS -->
+      <div class="vh-section">
+        <div class="vh-inner reveal">
+          <div>
+            <div class="vh-icon-big">🏗️</div>
+            <h2>Grúas</h2>
+            <p class="desc">Las grúas de arrastre y plataforma operan en condiciones de alto riesgo: rutas nocturnas, vehículos de terceros y carreteras congestionadas. Protegemos tanto el vehículo de arrastre como los bienes que transporta.</p>
+            <a class="btn btn-blue" href="cotizacion.html" style="margin-top:8px">Cotizar este vehículo</a>
+          </div>
+          <div class="vh-cols">
+            <div class="vh-box"><h4>Riesgos comunes</h4><ul><li>Daños al vehículo arrastrado</li><li>Accidentes en maniobra</li><li>Choques traseros</li><li>RC por carga en tránsito</li></ul></div>
+            <div class="vh-box"><h4>Coberturas sugeridas</h4><ul><li>RC ampliada especial</li><li>Daños a vehículo remolcado</li><li>Cobertura de grúa</li><li>Asistencia legal</li></ul></div>
+          </div>
+        </div>
+      </div>
+      <!-- TURISMO -->
+      <div class="vh-section">
+        <div class="vh-inner reveal">
+          <div>
+            <div class="vh-icon-big">🚌</div>
+            <h2>Transporte Turístico de Pasajeros</h2>
+            <p class="desc">Los autobuses y vehículos de turismo requieren coberturas especiales que protejan a los pasajeros, su equipaje y la responsabilidad civil ampliada que exige este tipo de servicio.</p>
+            <a class="btn btn-blue" href="cotizacion.html" style="margin-top:8px">Cotizar este vehículo</a>
+          </div>
+          <div class="vh-cols">
+            <div class="vh-box"><h4>Riesgos comunes</h4><ul><li>Accidentes con pasajeros</li><li>Daños a equipaje</li><li>Siniestros en carretera</li><li>Responsabilidad por turistas</li></ul></div>
+            <div class="vh-box"><h4>Coberturas sugeridas</h4><ul><li>Seguro colectivo de pasajeros</li><li>Cobertura de equipaje</li><li>RC turística ampliada</li><li>Asistencia médica inmediata</li></ul></div>
+          </div>
+        </div>
+      </div>
+      <!-- URVANS -->
+      <div class="vh-section">
+        <div class="vh-inner reveal">
+          <div>
+            <div class="vh-icon-big">🚐</div>
+            <h2>Urvans y Vans de Pasajeros</h2>
+            <p class="desc">Las urvans y camionetas colectivas requieren planes específicos por la cantidad de pasajeros que transportan y su operación en rutas urbanas e interurbanas de alta demanda.</p>
+            <a class="btn btn-blue" href="cotizacion.html" style="margin-top:8px">Cotizar este vehículo</a>
+          </div>
+          <div class="vh-cols">
+            <div class="vh-box"><h4>Riesgos comunes</h4><ul><li>Colisiones en rutas urbanas</li><li>Lesiones a pasajeros</li><li>Robo en terminales</li><li>Daños a terceros</li></ul></div>
+            <div class="vh-box"><h4>Coberturas sugeridas</h4><ul><li>RC por pasajero ampliada</li><li>Seguro de ocupantes</li><li>Cobertura a daños propios</li><li>Asistencia vial urbana</li></ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" style="padding:40px 0 80px">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2>¿Tu vehículo no está en la lista?</h2>
+          <p>Contáctanos, seguramente tenemos una solución para ti.</p>
+          <div class="cta-btns"><a class="btn btn-primary" href="cotizacion.html">Solicitar cotización</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a class="logo" href="index.html"><div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div> <span>PROtgt Seguros S.A. de C.V.</span></a><p>Especialistas en seguros para transporte público y comercial en toda la República Mexicana.</p><div class="footer-social"><a class="social-icon" href="#">f</a><a class="social-icon" href="#">ig</a><a class="social-icon" href="#">in</a><a class="social-icon" href="https://wa.me/521234567890" target="_blank">W</a></div></div>
+        <div><h4>Navegación</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="quienes.html">Nosotros</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="vehiculos.html">Vehículos</a></li><li><a href="siniestros.html">Siniestros</a></li><li><a href="cotizacion.html">Cotización</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+        <div><h4>Servicios</h4><ul><li><a href="servicios.html">Responsabilidad Civil</a></li><li><a href="servicios.html">Cobertura Amplia</a></li><li><a href="servicios.html">Seguro de Pasajeros</a></li><li><a href="servicios.html">Protección de Carga</a></li><li><a href="servicios.html">Seguro de Flotillas</a></li></ul></div>
+        <div><h4>Contacto</h4><ul><li><a href="contacto.html">📍 Insurgentes Sur 1234, CDMX</a></li><li><a href="tel:5512345678">📞 (55) 1234-5678</a></li><li><a href="mailto:info@PROtgtSeguros.com.mx">✉️ info@PROtgtSeguros.com.mx</a></li><li><a href="#">🕐 Lun–Vie 8:00–19:00</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 PROtgt Seguros S.A. de C.V. Todos los derechos reservados.</p><p>Diseñado para el sector transporte de México</p></div>
+    </div>
+  </footer>
+  <div class="wa-widget"><div class="wa-bubble hidden" id="wa-bubble"><button class="close-btn" onclick="_closeBubblePermanent()">✕</button><div class="wa-bubble-header">¿Necesitas ayuda?</div><p>Contáctanos por WhatsApp para cotizar tu seguro.</p><a class="wa-bubble-link" href="https://wa.me/521234567890?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20seguros%20de%20transporte." target="_blank">Abrir WhatsApp</a></div><a class="wa-btn" href="https://wa.me/521234567890?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20seguros%20de%20transporte." target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
