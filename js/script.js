@@ -90,39 +90,119 @@ function initReveal() {
 
 document.addEventListener('DOMContentLoaded', initReveal);
 
-/* ── FORMULARIO COTIZACIÓN ── */
-function submitQuote(e) {
-  if (e) e.preventDefault();
-  const btn = e ? e.submitter : null;
-  if (btn) btn.textContent = 'Enviando...';
-  setTimeout(() => {
+/* ── FORMULARIO COTIZACIÓN (Formspree) ── */
+async function handleQuoteSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn  = document.getElementById('btn-cotizar');
+  const originalText = btn ? btn.textContent : '';
+
+  if (btn) { btn.textContent = 'Enviando...'; btn.disabled = true; }
+
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      /* ✅ Envío exitoso */
+      form.innerHTML = `
+        <div style="text-align:center;padding:40px 20px">
+          <div style="font-size:56px;margin-bottom:16px">✅</div>
+          <h3 style="font-size:22px;font-weight:800;color:#0B1F3A;margin-bottom:10px">
+            ¡Solicitud enviada con éxito!
+          </h3>
+          <p style="font-size:15px;color:#6B7A8D;line-height:1.6;margin-bottom:20px">
+            Gracias por contactar a <strong>PROtgt Seguros</strong>.<br>
+            Un asesor se comunicará contigo en menos de 2 horas hábiles.
+          </p>
+          <p style="font-size:14px;color:#6B7A8D">
+            ¿Necesitas respuesta inmediata?<br>
+            <a href="https://wa.me/529614535466?text=Hola%2C%20acabo%20de%20enviar%20una%20solicitud%20de%20cotizaci%C3%B3n."
+               target="_blank"
+               style="color:#E85D04;font-weight:700;text-decoration:none">
+              💬 Escríbenos por WhatsApp ahora
+            </a>
+          </p>
+        </div>`;
+    } else {
+      /* ❌ Error del servidor */
+      throw new Error('Error al enviar');
+    }
+  } catch (err) {
+    /* ❌ Error de red o Formspree no configurado */
+    if (btn) { btn.textContent = originalText; btn.disabled = false; }
     alert(
-      '¡Gracias por contactar a PROtgt Seguros!\n\n' +
-      'Tu solicitud fue recibida con éxito.\n' +
-      'Un asesor se pondrá en contacto contigo\n' +
-      'en menos de 2 horas hábiles.\n\n' +
-      '📞 Tel: 961 453 54 66\n' +
-      '💬 WhatsApp: 961 453 54 66'
+      '⚠️ No se pudo enviar el formulario.\n\n' +
+      'Por favor contáctanos directamente:\n\n' +
+      '📞 Tel: (961) 453-54-66\n' +
+      '💬 WhatsApp: 961 453 54 66\n' +
+      '✉️ info@protgtseguros.com.mx\n\n' +
+      'Nota: Si eres el administrador, configura\n' +
+      'tu ID de Formspree en cotizacion.html'
     );
-    if (e && e.target) e.target.reset();
-    if (btn) btn.textContent = 'Enviar solicitud de cotización →';
-  }, 600);
+  }
 }
 
-/* ── FORMULARIO CONTACTO ── */
-function submitContact(e) {
-  if (e) e.preventDefault();
-  const btn = e ? e.submitter : null;
-  if (btn) btn.textContent = 'Enviando...';
-  setTimeout(() => {
+/* ── FORMULARIO CONTACTO (Formspree) ── */
+async function handleContactSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn  = form.querySelector('button[type="submit"]');
+  const originalText = btn ? btn.textContent : '';
+
+  if (btn) { btn.textContent = 'Enviando...'; btn.disabled = true; }
+
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      form.innerHTML = `
+        <div style="text-align:center;padding:40px 20px">
+          <div style="font-size:56px;margin-bottom:16px">✅</div>
+          <h3 style="font-size:20px;font-weight:800;color:#0B1F3A;margin-bottom:10px">
+            ¡Mensaje enviado!
+          </h3>
+          <p style="font-size:14px;color:#6B7A8D;line-height:1.6">
+            Gracias por escribirnos.<br>
+            El equipo de <strong>PROtgt Seguros</strong> te responderá a la brevedad.
+          </p>
+        </div>`;
+    } else {
+      throw new Error('Error al enviar');
+    }
+  } catch (err) {
+    if (btn) { btn.textContent = originalText; btn.disabled = false; }
     alert(
-      '¡Mensaje enviado a PROtgt Seguros!\n\n' +
-      'Gracias por contactarnos.\n' +
-      'Te responderemos a la brevedad posible.\n\n' +
-      '📞 Tel: 961 453 54 66\n' +
+      '⚠️ No se pudo enviar el mensaje.\n\n' +
+      'Por favor contáctanos directamente:\n\n' +
+      '📞 Tel: (961) 453-54-66\n' +
       '💬 WhatsApp: 961 453 54 66'
     );
-    if (e && e.target) e.target.reset();
-    if (btn) btn.textContent = 'Enviar mensaje →';
-  }, 600);
+  }
 }
+
+/* Mostrar mensaje de éxito si viene de redirección de Formspree */
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.location.search.includes('enviado=1')) {
+    const formCard = document.querySelector('.form-card');
+    if (formCard) {
+      formCard.innerHTML = `
+        <div style="text-align:center;padding:40px 20px">
+          <div style="font-size:56px;margin-bottom:16px">✅</div>
+          <h3 style="font-size:22px;font-weight:800;color:#0B1F3A;margin-bottom:10px">
+            ¡Solicitud enviada con éxito!
+          </h3>
+          <p style="font-size:15px;color:#6B7A8D;line-height:1.6">
+            Un asesor de <strong>PROtgt Seguros</strong> te contactará pronto.
+          </p>
+        </div>`;
+    }
+  }
+});

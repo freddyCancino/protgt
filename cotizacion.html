@@ -35,37 +35,44 @@
         <div class="form-card reveal">
           <h3 style="font-size:20px;font-weight:800;color:var(--navy);margin-bottom:8px">Formulario de cotización</h3>
           <p style="font-size:14px;color:var(--gray);margin-bottom:28px">Todos los campos son importantes para ofrecerte la mejor propuesta. Te respondemos lo antes posible.</p>
-          <form onsubmit="submitQuote(event)">
+                      <!-- ✅ Formspree: cambia YOUR_FORM_ID por tu ID real de formspree.io -->
+            <form action="https://formspree.io/f/mlgpwnea" method="POST" onsubmit="handleQuoteSubmit(event)">
+
+              <!-- Campo oculto: asunto del correo que recibirás -->
+              <input type="hidden" name="_subject" value="Nueva solicitud de cotización – PROtgt Seguros">
+              <!-- Redirige a esta página después de enviar (opcional) -->
+              <input type="hidden" name="_next" value="cotizacion.html?enviado=1">
+
             <div class="form-row">
-              <div class="form-group"><label>Nombre completo *</label><input type="text" placeholder="Tu nombre completo" required></div>
-              <div class="form-group"><label>Teléfono *</label><input type="tel" placeholder="Tu número de teléfono" required></div>
+              <div class="form-group"><label>Nombre completo *</label><input type="text" name="nombre" placeholder="Tu nombre completo" required></div>
+              <div class="form-group"><label>Teléfono *</label><input type="tel" name="telefono" placeholder="Tu número de teléfono" required></div>
             </div>
             <div class="form-row">
-              <div class="form-group"><label>Correo electrónico *</label><input type="email" placeholder="correo@ejemplo.com" required></div>
+              <div class="form-group"><label>Correo electrónico *</label><input type="email" name="correo" placeholder="correo@ejemplo.com" required></div>
               <div class="form-group"><label>Tipo de vehículo *</label>
-                <select required><option value="">Seleccionar...</option><option>Taxi</option><option>Tráiler / Camión de carga</option><option>Automóvil</option><option>Grúa</option><option>Transporte turístico</option><option>Urvan / Van de pasajeros</option><option>Flotilla (2+ vehículos)</option></select>
+                <select name="tipo_vehiculo" required><option value="">Seleccionar...</option><option>Taxi</option><option>Tráiler / Camión de carga</option><option>Automóvil</option><option>Grúa</option><option>Transporte turístico</option><option>Urvan / Van de pasajeros</option><option>Flotilla (2+ vehículos)</option></select>
               </div>
             </div>
             <div class="form-row">
-              <div class="form-group"><label>Marca</label><input type="text" placeholder="Ej. Volkswagen, Kenworth"></div>
-              <div class="form-group"><label>Modelo</label><input type="text" placeholder="Ej. Crafter, T800"></div>
+              <div class="form-group"><label>Marca</label><input type="text" name="marca" placeholder="Ej. Volkswagen, Kenworth"></div>
+              <div class="form-group"><label>Modelo</label><input type="text" name="modelo" placeholder="Ej. Crafter, T800"></div>
             </div>
             <div class="form-row">
-              <div class="form-group"><label>Año</label><input type="number" placeholder="Ej. 2022" min="1990" max="2025"></div>
+              <div class="form-group"><label>Año</label><input type="number" name="anio" placeholder="Ej. 2022" min="1990" max="2025"></div>
               <div class="form-group"><label>Estado o zona de servicio *</label>
-                <select required><option value="">Seleccionar...</option><option>Ciudad de México</option><option>Jalisco</option><option>Nuevo León</option><option>Estado de México</option><option>Puebla</option><option>Veracruz</option><option>Chiapas</option><option>Quintana Roo</option><option>Otro estado</option></select>
+                <select name="estado" required><option value="">Seleccionar...</option><option>Ciudad de México</option><option>Jalisco</option><option>Nuevo León</option><option>Estado de México</option><option>Puebla</option><option>Veracruz</option><option>Chiapas</option><option>Quintana Roo</option><option>Otro estado</option></select>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group form-full"><label>Tipo de seguro requerido</label>
-                <select><option value="">Seleccionar tipo...</option><option>Responsabilidad Civil</option><option>Cobertura Amplia</option><option>Seguro para Pasajeros</option><option>Protección de Carga</option><option>Seguro de Flotilla</option><option>No sé, necesito asesoría</option></select>
+                <select name="tipo_seguro"><option value="">Seleccionar tipo...</option><option>Responsabilidad Civil</option><option>Cobertura Amplia</option><option>Seguro para Pasajeros</option><option>Protección de Carga</option><option>Seguro de Flotilla</option><option>No sé, necesito asesoría</option></select>
               </div>
             </div>
             <div class="form-group" style="margin-top:0;margin-bottom:16px">
               <label>Mensaje adicional</label>
-              <textarea placeholder="Cuéntanos más: número de vehículos, ruta de operación, necesidades específicas..."></textarea>
+              <textarea name="mensaje" placeholder="Cuéntanos más: número de vehículos, ruta de operación, necesidades específicas..."></textarea>
             </div>
-            <button class="form-submit" type="submit">Enviar solicitud de cotización →</button>
+            <button class="form-submit" type="submit" id="btn-cotizar">Enviar solicitud de cotización →</button>
             <p style="font-size:12px;color:var(--gray);margin-top:12px;text-align:center">Al enviar aceptas que un asesor de PROtgt Seguros se ponga en contacto contigo.</p>
           </form>
         </div>
